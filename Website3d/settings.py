@@ -24,7 +24,7 @@ print(BASE_DIR)
 SECRET_KEY = '4mi)4#4mi6!=)yhx#!@83i!!e0v-%vmtbdnjv8ezm4mmm&=8ou'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["pnitech.herokuapp.com","127.0.0.1"]
 
