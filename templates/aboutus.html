@@ -6,17 +6,22 @@
     <title>Pnitch-About us</title>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <style>body {
-  background-color:#F4F6F7;
-}</style>
+  background-color:#E13737;
+}
+header{
+background-color:#F3E648
+}
+</style>
 </head>
 <body>
 <header class="text-gray-700 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">Pnitech</span>
+<!--      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">-->
+<!--        <path d="{% static 'img/favicon.jpg' %}"></path>-->
+<!--      </svg>-->
+      <img src="{% static 'img/favicon.jpg' %}">
+<!--      <span class="ml-3 text-xl">Pnitech</span>-->
     </a>
     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900" href="home">Home</a>
@@ -30,19 +35,20 @@
   </div>
 </header>
 
-<section class="text-gray-700 body-font">
+<section class="text-white-700 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="{% static 'img/3d.jpg' %}">
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">ABOUT US</h1>
-      <p class="mb-8 leading-relaxed">Pnitech empowers manufacturers, designers, students and hobbyists to turn powerful ideas into successful products by use of advanced 3D printing technology. Print beyond paper and compete in a dynamically changing world as 3Dwalla offers rapid prototyping services that help accelerate innovation and product development.</p>
-      <p class="mb-8 leading-relaxed">Rapid prototyping directly from CAD data streamlines the process of performance testing, at every stage of 3D model design in a manner that is both, cost and time effective.With vast experience in modeling and prototyping, our team of talented designers gives your concepts a strong aesthetic appeal. Shape your concepts by printing in ABS, PLA, castable resin and nylon. Sandstone full colour 3D printing, Architecture model making services and </p>
-      <p class="mb-8 leading-relaxed">3Dwalla also houses a wide collection of innovatively designed 3D printed products created by the team, for you can now design your home according to your individual taste or decorate your work desk with 3D figurines, 3D Mini-me, Bobble head, 3D selfie and explore the limitless possibilities in 3D printing. This is your turn to witness and be a part of the 3D printing revolution!</p>
+      <p class="mb-8 leading-relaxed">Who we are PnI Tech, Prototype and Innovation Tech in Mumbai, Maharashtra, India started with a hope of easy doing and helping creative minds to have a physical feel and also help to accelerate them in terms of their ideas. </p>
+      <p class="mb-8 leading-relaxed">As, we are in the field of Additive Manufacturing/ 3D printing/ Rapid Prototyping in polymers (thermoplastics), SLA, SLS by use of advanced 3d printing technology to empower the manufacturers, designers, students and hobbyists to turn their powerful ideas into successful products in a very great manner that it is both cost and time effective. </p>
+      <p class="mb-8 leading-relaxed">Also, our team of talented designers offers you the best design solutions require to turn your conceptual ideas into 3d form in a very competitive edge in the market which gives your concept a strong aesthetic appeal. </p>
+      <p class="mb-8 leading-relaxed">We are one-stop solutions for all fully functional prototype to production parts in 3d printing ad well as Injection Molding.</p>
     </div>
   </div>
 </section>
 
-<footer class="text-gray-700 body-font">
+<footer class="text-white-700 body-font">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
