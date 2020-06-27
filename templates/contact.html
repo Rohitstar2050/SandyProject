@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <title>Pnitech-Contact</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
+    <script >
+      if ({{validation}})
+      {
+      alert("Submitted Successfully !!!")
+      }
+      else
+      {
+      alert("Please fill the all mandatory details !!!")
+      }
+    </script>
   <style>body {
   background-color: #E13737;
 }
@@ -49,18 +58,23 @@ background-color:#F3E648
 
         <div class="p-2 w-1/2">
 
-          <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text" name="name">
+          <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Name" type="text" name="name"  id="username">
         </div>
         <div class="p-2 w-1/2">
-          <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" type="email" name="email">
+          <input class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2" placeholder="Email" type="email" name="email" id="useremail">
         </div>
         <div class="p-2 w-full">
-          <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message" name="msg"></textarea>
+          <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message(Optional)" name="msg" id="usermsg"></textarea>
         </div>
         <div class="p-2 w-full">
           <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"  type="submit">Submit</button>
         </div>
       </form>
+    {% if validation %}
+    <p  class="sm:text-3xl text-2xl font-medium title-font mb-4  text-white">Please enter the mandatory fields name and email !!!</p>
+    {% else %}
+    <p  class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Thank you!!! We will Contact you </p>
+    {% endif %}
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
           <a class="text-white">Pnitech@gmail.com</a>
 
