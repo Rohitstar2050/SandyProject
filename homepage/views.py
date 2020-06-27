@@ -24,7 +24,13 @@ def contactsubmit(request):
     name=request.POST['name']
     email = request.POST['email']
     msg= request.POST['msg']
-
-    ref=contactdata(name=name,emailid=email,msg=msg)
-    ref.save()
-    return render(request,'contact.html')
+    validate={}
+    validate['validation']=False
+    if name!="" and email!="":
+        print("pass")
+        ref=contactdata(name=name,emailid=email,msg=msg)
+        ref.save()
+        return render(request,'contact.html',validate)
+    else:
+        validate['validation'] = True
+        return render(request,'contact.html',validate)
