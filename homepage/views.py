@@ -15,6 +15,8 @@ def blog(request):
 def services(request):
     return render(request,'services.html')
 def contact(request):
+    # validate={}
+    # validate['validation'] = 'none'
     return render(request,'contact.html')
 
 def aboutus(request):
@@ -25,12 +27,12 @@ def contactsubmit(request):
     email = request.POST['email']
     msg= request.POST['msg']
     validate={}
-    validate['validation']=False
+
     if name!="" and email!="":
-        print("pass")
+        validate['validationpass']=True
         ref=contactdata(name=name,emailid=email,msg=msg)
         ref.save()
         return render(request,'contact.html',validate)
     else:
-        validate['validation'] = True
+        validate['validationfail'] =True
         return render(request,'contact.html',validate)
