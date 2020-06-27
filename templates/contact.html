@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Pnitech-Contact</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <script type="text/javascript" src="{% static 'js/contact.js' %}"></script>
+
   <style>body {
   background-color: #E13737;
 }
@@ -42,7 +42,7 @@ background-color:#F3E648
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Do you have a project that you would like to discuss? Or just want to say hello? Drop us a line and we will get back to you as soon as we can!</p>
     </div>
-    <form method="POST" >
+    <form method="POST" action="contactsubmit">
       {% csrf_token %}
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">
@@ -58,7 +58,7 @@ background-color:#F3E648
           <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message" name="msg"></textarea>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="SubFunction()" type="submit">Submit</button>
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"  type="submit">Submit</button>
         </div>
       </form>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
